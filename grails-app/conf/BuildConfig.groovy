@@ -29,5 +29,7 @@ grails.project.dependency.resolution = {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
 
         // runtime 'mysql:mysql-connector-java:5.1.5'
+        runtime 'org.apache.activemq:activemq-core:5.4.0'
+        runtime 'org.apache.activemq:activemq-pool:5.4.0'
     }
 }
