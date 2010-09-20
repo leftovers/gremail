@@ -1,8 +1,11 @@
 // Place your Spring DSL code here
+import org.apache.activemq.pool.PooledConnectionFactory
+import org.apache.activemq.ActiveMQConnectionFactory
+
 beans = {
-    jmsConnectionFactory(org.apache.activemq.pool.PooledConnectionFactory){bean ->
+    jmsConnectionFactory(PooledConnectionFactory){bean ->
         bean.destroyMethod ="stop"
-        connectionFactory(org.apache.activemq.ActiveMQConnectionFactory) {
+        connectionFactory(ActiveMQConnectionFactory) {
             brokerURL = "tcp://localhost:61616"
         }
     }
