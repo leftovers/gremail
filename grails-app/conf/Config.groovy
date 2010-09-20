@@ -82,7 +82,7 @@ log4j = {
 
     warn   'org.mortbay.log'
 }
-grails.mail.encoding="UTF-8"
+grails.mail.subject.encoding="UTF-8"
 grails.mail.host = "smtp.gmail.com"
 grails.mail.port = "465"
 /* load from ~/.grails/email-secrets.groovy */
