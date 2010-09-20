@@ -9,8 +9,8 @@ class SendMailController {
     def index = {
         //example
         emailService.send(
-            to: conf.grails.mail.test.sendto,
-            from: conf.grails.mail.test.from,
+            to: config.grails.mail.test.sendto,
+            from: config.grails.mail.test.from,
             subject: 'JMS, ActiveMQ, メールプラグインでの、メール送信テスト',
             model: [greeting: "こんにちわ世界!",messages:"本日は晴天なり。コロスケなりー"],
             view: "/emails/helloWorld")
