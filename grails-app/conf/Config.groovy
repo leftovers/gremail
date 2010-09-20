@@ -82,3 +82,14 @@ log4j = {
 
     warn   'org.mortbay.log'
 }
+grails.mail.host = "smtp.gmail.com"
+grails.mail.port = "465"
+/* load from ~/.grails/email-secrets.groovy */
+//grails.mail.username = "your@emai"
+//grails.mail.password = "secret"
+grails.mail.props = ["mail.smtp.auth": "true",
+        "mail.smtp.socketFactory.port": "465",
+        "mail.smtp.socketFactory.class": "javax.net.ssl.SSLSocketFactory",
+        "mail.smtp.socketFactory.fallback": "false",
+        "mail.smtp.starttls.enable": "true",
+        "mail.debug": "true"]
