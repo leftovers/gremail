@@ -1,2 +1,11 @@
 Simple example grails app using activemq,jms,mail.
 
+how-to
+
+you'll need email config file ~/.grails/email-secrets.groovy
+----
+grails.mail.username="username@gmail.com"
+grails.mail.password="yourpassword"
+grails.mail.test.sendto="test.email.send.to@somedomain.com"
+grails.mail.test.from="username@gmail.com"
+----
